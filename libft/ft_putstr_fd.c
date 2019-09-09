@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/27 11:36:58 by shat              #+#    #+#             */
-/*   Updated: 2019/09/09 13:47:06 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/09 15:52:05 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	(s) ? write(fd, s, ft_strlen(s)) : 0;
+	write(fd, s, ft_strlen(s));
 }
