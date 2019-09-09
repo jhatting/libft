@@ -6,14 +6,14 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/11 20:07:28 by shat              #+#    #+#             */
-/*   Updated: 2019/09/09 10:57:04 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/09 12:26:31 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**Output a character or a word to a string
+**Output a character or a word to a standard input output.
 */
 
 void	ft_putchar(char c)

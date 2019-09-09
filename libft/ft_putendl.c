@@ -6,12 +6,11 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/28 13:27:16 by shat              #+#    #+#             */
-/*   Updated: 2019/09/09 11:53:24 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/09 13:33:42 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 /*
 **inserts a newline and doesnt occupy memory.
