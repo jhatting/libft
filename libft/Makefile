@@ -6,7 +6,7 @@
 #    By: shat <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/02 20:01:21 by shat              #+#    #+#              #
-#    Updated: 2019/09/05 15:12:09 by shat             ###   ########.fr        #
+#    Updated: 2019/09/10 15:43:23 by shat             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,7 @@ SRC = ft_atoi.c\
 	  ft_putnbr_fd.c\
 	  ft_putstr_fd.c\
 	  ft_putstr.c\
+	  ft_min.c\
 	  ft_strcat.c\
 	  ft_strchr.c\
 	  ft_strclr.c\

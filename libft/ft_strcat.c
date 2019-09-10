@@ -6,18 +6,20 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/16 10:55:10 by shat              #+#    #+#             */
-/*   Updated: 2019/09/09 14:09:55 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/10 15:45:46 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* The strcat() function is used for string interconnection
+/*
+**The strcat() function is used for string interconnection
 **with specified string at the end of another specified string.
 **This function takes two pointers as arguments and returns the pointer
 **to the destination string after concatenation.
 **Str1 - pointer to the destination string.
-**Str2 - pointer to the source string which is appended to the destination string.
+**Str2 - pointer to the source string which is appended
+**to the destination string.
 */
 
 char	*ft_strcat(char *s1, const char *s2)

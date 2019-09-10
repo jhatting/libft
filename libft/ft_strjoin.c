@@ -6,11 +6,15 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 12:21:56 by shat              #+#    #+#             */
-/*   Updated: 2019/08/29 12:23:49 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/10 15:02:08 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**Appends the string s2 to the end of the s1 in a new string str.
+*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

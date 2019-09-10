@@ -6,14 +6,15 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/28 22:44:14 by shat              #+#    #+#             */
-/*   Updated: 2019/09/09 16:04:43 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/10 15:47:26 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Compare s1 and s2. If both strings are equal/identical, returns 0, else returns 1.
+** Compare s1 and s2. If both strings are equal/identical,
+**returns 0, else returns 1.
 ** The comparison is done lexicographically(alphabetically ordered).
 **using conditional operators (condition ? exprIfTrue : exprIfFalse) for NULL:
 */

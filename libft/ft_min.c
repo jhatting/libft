@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_min.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/20 14:12:48 by shat              #+#    #+#             */
-/*   Updated: 2019/09/10 15:46:50 by shat             ###   ########.fr       */
+/*   Created: 2019/09/10 15:41:06 by shat              #+#    #+#             */
+/*   Updated: 2019/09/10 15:41:19 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
-**is used to duplicate a string. It returns a pointer
-**to null-terminated byte string
+** Custom function I added.
+** Parameters: two size_t numbers
+** Side effect: none (compares the two unsigned numbers)
+** Return value: the smaller of a and b, b if they are equal
 */
 
-char	*ft_strdup(const char *s1)
-{
-	char	*newstr;
+#include "libft.h"
 
-	newstr = ((char *)malloc(sizeof(char) * (ft_strlen(s1) + 1)));
-	if (newstr)
-		return (ft_strcpy(newstr, s1));
-	return (NULL);
+size_t	ft_min(size_t a, size_t b)
+{
+	if (a < b)
+		return (a);
+	return (b);
 }
