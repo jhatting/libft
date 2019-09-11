@@ -6,11 +6,15 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/08 22:54:08 by shat              #+#    #+#             */
-/*   Updated: 2019/09/04 16:27:24 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/10 16:09:10 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**The strlen() function compute the length of the string s
+*/
 
 size_t	ft_strlen(char const *str)
 {

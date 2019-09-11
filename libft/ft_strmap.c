@@ -6,11 +6,16 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/28 22:47:58 by shat              #+#    #+#             */
-/*   Updated: 2019/08/28 22:49:20 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/10 16:26:02 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Apply the function f to each character of the parameter string,
+** create a new string with the result, and return it.
+*/
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
