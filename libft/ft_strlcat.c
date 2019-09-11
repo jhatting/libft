@@ -6,12 +6,15 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/28 15:16:07 by shat              #+#    #+#             */
-/*   Updated: 2019/09/10 15:37:36 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/11 12:22:00 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Re-coding of the OpenBSD function strlcat().
+**Appends string src to the end of dst. It will append at most
+**maxlen - strlen(dst) - 1 characters. It will then NUL-terminate,
+**unless maxlen is 0 or the original dst string was longer than maxlen.
+**Re-coding of the OpenBSD function strlcat().
 ** Paramters: destination string; const source string; number "size" of type
 ** size_t that should be the sum of strlen(destination string), strlen(source
 ** string), and 1 (for a nul byte) - you'll get weird issues if you don't have
