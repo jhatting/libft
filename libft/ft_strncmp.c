@@ -6,11 +6,17 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/16 10:14:31 by shat              #+#    #+#             */
-/*   Updated: 2019/08/16 10:15:46 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/11 10:26:38 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**strncmp() functions lexicographically compare the
+**null-terminated strings s1 and s2
+**not more than n characters 
+*/
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

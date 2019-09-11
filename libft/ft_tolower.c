@@ -6,11 +6,15 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/27 22:25:58 by shat              #+#    #+#             */
-/*   Updated: 2019/08/27 22:39:00 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/11 11:56:30 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**function converts a uppercase to a lowercase alphabet.
+*/
 
 int		ft_tolower(int c)
 {
