@@ -6,11 +6,15 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 23:35:00 by shat              #+#    #+#             */
-/*   Updated: 2019/09/02 17:32:46 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/12 14:07:20 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**compares the first n bytes of memory area str1 and memory area str2.
+*/
 
 int		ft_memcmp(const void *b1, const void *b2, size_t len)
 {
