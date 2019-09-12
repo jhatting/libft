@@ -6,11 +6,16 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 18:59:43 by shat              #+#    #+#             */
-/*   Updated: 2019/09/11 12:10:01 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/12 14:57:34 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+ 
+/*
+**The ft_lstiter() function iterates through a list and applies the
+** function f to each link in the list.
+*/
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
