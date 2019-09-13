@@ -6,11 +6,19 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 12:25:56 by shat              #+#    #+#             */
-/*   Updated: 2019/08/29 13:09:09 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/12 22:07:06 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*Function allocates with malloc(3) and returns
+**a copy of the string given as argument without whitespaces at the
+**beginning or at the end of the string. ' ', '\n' and '\t' are considered
+**whitespace characters. If s has no whitespaces at the beginning or the
+**end, the function returns a copy of s. If the allocation fails the
+**function returns NULL.
+*/
 
 char	*ft_strtrim(char const *s)
 {

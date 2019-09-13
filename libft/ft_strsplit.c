@@ -6,11 +6,18 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 13:14:33 by shat              #+#    #+#             */
-/*   Updated: 2019/09/11 12:17:24 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/12 22:36:15 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**allocates with malloc(3) and returns an array of fresh strings 
+**(all ending with '\0' including the array itself) obtained by
+**splitting s using the character c as a delimiter. If the allocation
+**fails, the function returns NULL.
+*/
 
 char		**ft_strsplit(char const *s, char c)
 {
