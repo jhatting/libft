@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 13:26:18 by shat              #+#    #+#             */
-/*   Updated: 2019/09/13 16:22:29 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/13 20:32:08 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **The ft_map() function iterates a list lst and applies the function f
 **to each link to create a “fresh” list (using malloc(3)) resulting from
 **the successive applications of f. If the allocation fails, the function
-**returns NULL** 
+**returns NULL
 */
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))

@@ -6,13 +6,14 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 12:25:56 by shat              #+#    #+#             */
-/*   Updated: 2019/09/13 16:11:53 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/13 20:30:16 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*Function allocates with malloc(3) and returns
+/*
+**Function allocates with malloc(3) and returns
 **a copy of the string given as argument without whitespaces at the
 **beginning or at the end of the string. ' ', '\n' and '\t' are considered
 **whitespace characters. If s has no whitespaces at the beginning or the

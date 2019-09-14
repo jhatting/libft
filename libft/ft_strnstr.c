@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/19 23:27:14 by shat              #+#    #+#             */
-/*   Updated: 2019/09/11 12:04:19 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/13 20:27:56 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@
 **are searched. Characters after the '\0' are not searched.
 **If needle is an empty string, haystack is returned; if needle occurs
 **nowhere in haystack, NULL is returned; otherwise a pointer to the first
-**character of the first occurrence of needle is returned.*/
+**character of the first occurrence of needle is returned.
+*/
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
