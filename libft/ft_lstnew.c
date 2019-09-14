@@ -6,7 +6,7 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 18:54:31 by shat              #+#    #+#             */
-/*   Updated: 2019/09/12 15:10:16 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/13 20:45:42 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 **variable content is initialized to NULL and the variable content_size
 **is initialized to 0 even if the parameter content_size isn’t. The
 **variable next is initialized to NULL. If the allocation fails, the
-**function returns NULL. 
+**function returns NULL.
 */
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
