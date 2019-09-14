@@ -6,44 +6,75 @@
 /*   By: shat <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/29 13:14:33 by shat              #+#    #+#             */
-/*   Updated: 2019/09/12 22:36:15 by shat             ###   ########.fr       */
+/*   Updated: 2019/09/13 16:13:18 by shat             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**allocates with malloc(3) and returns an array of fresh strings 
-**(all ending with '\0' including the array itself) obtained by
-**splitting s using the character c as a delimiter. If the allocation
-**fails, the function returns NULL.
+** ft_place_words cycles through the given strings characters
+** avoiding the delimiting character and returning the word
+** that will populater our new string
 */
 
-char		**ft_strsplit(char const *s, char c)
+static char		*ft_place_words(char const *s, char c, int *index)
 {
-	size_t	start;
-	size_t	end;
-	size_t	i;
-	size_t	nb_words;
-	char	**tab;
+	int		i;
+	char	*word;
+	int		start;
 
-	nb_words = 0;
-	tab = NULL;
 	i = 0;
-	if (s && ((tab = (char **)malloc(sizeof(*tab) * (ft_strlen(s) / 2 + 2)))))
+	while (s[*index] == c && s[*index])
+		(*index)++;
+	start = *index;
+	while (s[*index] != c && s[*index])
+		(*index)++;
+	if (!(word = ft_strnew(*index - start)))
+		return (NULL);
+	while (start < *index)
 	{
-		while (i < ft_strlen(s))
-		{
-			while (s[i] == c && s[i])
-				i++;
-			start = i;
-			while (s[i] != c && s[i])
-				i++;
-			end = i;
-			if ((end - start) > 0)
-				tab[nb_words++] = ft_strsub(s, start, end - start);
-		}
-		tab[nb_words] = 0;
+		word[i] = s[start];
+		i++;
+		start++;
 	}
-	return (tab);
+	word[i] = '\0';
+	return (word);
+}
+
+/*
+** ft_strsplit is going to return a 2D array with strings
+** without their given delimiter character.
+** First, we check for a given string and delimiter.
+** Then, we check for letters that are not the delimiters
+** Then we build the 2D array using those words
+** and ft_place_words
+*/
+
+char			**ft_strsplit(char const *s, char c)
+{
+	char	**sentence;
+	int		i;
+	int		count;
+	int		k;
+
+	k = 0;
+	count = 0;
+	i = 0;
+	if (!s || !c)
+		return (NULL);
+	while (s[i] != '\0')
+	{
+		if (s[i] != c && (s[i + 1] == c || s[i + 1] == '\0'))
+			count++;
+		i++;
+	}
+	i = 0;
+	sentence = (char **)malloc((count + 1) * sizeof(char *));
+	if (!sentence)
+		return (NULL);
+	while (i < count)
+		sentence[i++] = ft_place_words(s, c, &k);
+	sentence[i] = 0;
+	return (sentence);
 }
